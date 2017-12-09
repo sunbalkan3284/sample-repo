@@ -2,3 +2,4 @@
    become: yes
    roles:
      - apache_install
+     - apache_setup
