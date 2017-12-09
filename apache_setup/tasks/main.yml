@@ -1,6 +1,6 @@
   - name: replace httpd.conf
-    copy: src=/home/vagrant/sample-repo/apache_setup/files/httpd.conf dest=/etc/httpd/conf/httpd.conf
-      
+    copy: src={{role_path}}/files/httpd.conf dest=/etc/httpd/conf/httpd.conf
+
   - name: Apache start
     service:
       name: httpd
